@@ -5,40 +5,93 @@ This project is a hands-on implementation of a sentiment analysis model using th
 ## Project Setup
 
 ### Prerequisites
-- Python 3.11.6 (managed via `pyenv` or installed directly).
-- `virtualenv` for creating an isolated Python environment.
-- `git` for version control.
 
-### Steps Completed So Far
+- Python 3.11.6 (managed via pyenv or installed directly).
+- virtualenv for creating an isolated Python environment.
+- git for version control.
 
-1. **Project Initialization**
-   - Created a project directory: `sentiment-analysis`.
-   - Initialized a Git repository for version control.
+---
 
-2. **Environment Setup**
-   - Created and activated a virtual environment:
-     ```bash
-     virtualenv venv
-     source venv/bin/activate
-     ```
-   - Installed the required libraries:
-     ```bash
-     pip install transformers datasets torch
-     ```
+### Setting Up Python 3.11.6
 
-3. **Initial Script**
-   - Created a Python script (`sentiment_analysis.py`) to test the Hugging Face Transformers library:
-     ```python
-     from transformers import pipeline
+1. Install pyenv
+- On macOS, use Homebrew to install pyenv:
 
-     sentiment = pipeline("sentiment-analysis")
-     result = sentiment("I love programming!")
-     print(result)
-     ```
-   - Verified the environment is working as expected.
+```
+brew install pyenv
+```
 
-4. **Python Version Management**
-   - Set Python 3.11.6 as the local version using `pyenv`:
-     ```bash
-     pyenv local 3.11.6
-    
+2. Install Python 3.11.6
+- Install the desired Python version using pyenv:
+
+```
+pyenv install 3.11.6
+```
+
+3. Set Python 3.11.6 as the Local Version
+ - Navigate to the project directory and set the local version:
+
+```
+cd sentiment-analysis
+pyenv local 3.11.6
+```
+
+4. Verify the Python Version
+- Check the Python version in the terminal:
+
+```
+python --version
+```
+
+You should see:
+
+```
+Python 3.11.6
+```
+
+---
+
+### Creating a Virtual Environment
+
+1. Create the Virtual Environment
+- Use virtualenv to create an isolated environment with Python 3.11.6:
+
+```
+virtualenv venv --python=$(pyenv which python)
+```
+
+2. Activate the Virtual Environment
+
+```
+source venv/bin/activate
+```
+
+3. Verify the Python Version
+- Ensure the virtual environment is using Python 3.11.6:
+
+```
+python --version
+```
+
+Output should be:
+
+```
+Python 3.11.6
+```
+
+---
+
+### Installing Required Libraries
+
+Install the necessary Python libraries:
+
+```
+pip install transformers datasets torch
+```
+
+Save the dependencies to requirements.txt:
+
+```
+pip freeze > requirements.txt
+```
+
