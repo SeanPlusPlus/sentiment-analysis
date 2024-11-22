@@ -83,3 +83,31 @@ You should see output like
 ```
 [{'label': 'POSITIVE', 'score': 0.999...}]
 ```
+
+---
+
+## `sentiment_imdb.py`
+
+```
+python sentiment_imdb.py
+```
+
+This script demonstrates how to perform sentiment analysis using a pre-trained model (`distilbert-base-uncased-finetuned-sst-2-english`) on the IMDb dataset. It covers the following steps:
+
+### **What the Script Does**
+
+1. **Loads a Pre-trained Model**:
+   - Uses the Hugging Face Transformers library to load a pre-trained sentiment analysis pipeline (`distilbert-base-uncased-finetuned-sst-2-english`).
+
+2. **Loads the IMDb Dataset**:
+   - Downloads the IMDb movie review dataset, which contains thousands of labeled reviews (positive/negative sentiment).
+
+3. **Preprocesses the Data**:
+   - Tokenizes the text data using the `distilbert-base-uncased` tokenizer.
+   - Prepares the data for input to the model by padding and truncating text to a fixed length.
+
+4. **Evaluates the Model on Sample Reviews**:
+   - Iterates over a few test examples and prints:
+     - The review text.
+     - The actual sentiment label (`POSITIVE` or `NEGATIVE`).
+     - The model’s prediction and confidence score.
