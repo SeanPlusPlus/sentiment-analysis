@@ -13,6 +13,8 @@ def preprocess(data):
 
 tokenized_datasets = dataset.map(preprocess, batched=True)
 
+tokenized_datasets["train"] = tokenized_datasets["train"].select(range(500))  # Use first 500 examples
+
 # Load pre-trained model for sequence classification
 model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=2)
 
