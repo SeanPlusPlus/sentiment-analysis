@@ -44,3 +44,6 @@ trainer.train()
 
 # Save the fine-tuned model
 model.save_pretrained("./fine_tuned_sentiment_model")
+
+# Save the tokenizer
+tokenizer.save_pretrained("./fine_tuned_sentiment_model")
