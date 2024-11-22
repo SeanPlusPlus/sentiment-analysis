@@ -2,11 +2,13 @@
 
 This project is a hands-on implementation of a sentiment analysis model using the IMDb dataset and Hugging Face Transformers. The goal is to learn how to fine-tune a pre-trained model for text classification tasks.
 
-I started with this prompt
+I started with this prompt:
 
 <img width="827" alt="image" src="https://github.com/user-attachments/assets/36b6b209-fc83-40ef-8d96-e01f4ad609fb">
 
-And iteratively built out these scripts and this corresponding document. It's a pretty cool first for me - using ChatGPT to autogenerate an iterative tutorial!
+... And iteratively built out these scripts as well as this corresponding document. It's been a pretty cool first for me - using ChatGPT to autogenerate an iterative tutorial with functioning code and documentation!
+
+---
 
 ## Project Setup
 
