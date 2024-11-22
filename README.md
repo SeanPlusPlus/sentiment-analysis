@@ -111,3 +111,30 @@ This script demonstrates how to perform sentiment analysis using a pre-trained m
      - The review text.
      - The actual sentiment label (`POSITIVE` or `NEGATIVE`).
      - The model’s prediction and confidence score.
+
+---
+
+## `experiment_sentiment.py`
+
+This script is designed to explore how the pre-trained sentiment analysis pipeline handles custom input text. It allows for experimentation with different types of sentences, including positive, negative, and neutral examples, to understand the model's behavior and predictions.
+
+---
+
+### **What the Script Does**
+
+1. **Loads a Pre-trained Model**:
+   - Uses the Hugging Face Transformers library to load the `distilbert-base-uncased-finetuned-sst-2-english` sentiment analysis pipeline.
+
+2. **Processes Custom Reviews**:
+   - Analyzes a predefined list of reviews, each with different tones and sentiments:
+     - Positive reviews (e.g., "The movie was absolutely fantastic!").
+     - Negative reviews (e.g., "I couldn't stand the acting.").
+     - Neutral or mixed reviews (e.g., "It was an average movie.").
+
+3. **Generates Predictions**:
+   - Outputs the sentiment prediction (`POSITIVE` or `NEGATIVE`) along with the model's confidence score for each review.
+
+4. **Prints Results to the Console**:
+   - Each review and its corresponding prediction are printed in a readable format.
+
+---
