@@ -49,8 +49,6 @@ You should see:
 Python 3.11.6
 ```
 
----
-
 ### Creating a Virtual Environment
 
 1. Create the Virtual Environment
@@ -66,21 +64,6 @@ virtualenv venv --python=$(pyenv which python)
 source venv/bin/activate
 ```
 
-3. Verify the Python Version
-- Ensure the virtual environment is using Python 3.11.6:
-
-```
-python --version
-```
-
-Output should be:
-
-```
-Python 3.11.6
-```
-
----
-
 ### Installing Required Libraries
 
 Install the necessary Python libraries:
@@ -94,8 +77,6 @@ Save the dependencies to requirements.txt:
 ```
 pip freeze > requirements.txt
 ```
-
----
 
 ### Running the Project
 
