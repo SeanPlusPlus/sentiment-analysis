@@ -95,3 +95,16 @@ Save the dependencies to requirements.txt:
 pip freeze > requirements.txt
 ```
 
+---
+
+### Running the Project
+
+```
+python sentiment_analysis.py
+```
+
+And should see output like
+
+```
+[{'label': 'POSITIVE', 'score': 0.999...}]
+```
