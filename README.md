@@ -36,6 +36,12 @@ Install Python 3.11.6
 pyenv install 3.11.6
 ```
 
+Clone the repo to your local machine
+
+```
+git clone git@github.com:SeanPlusPlus/sentiment-analysis.git
+```
+
 Set Python 3.11.6 as the Local Version
  - Navigate to the project directory and set the local version:
 
