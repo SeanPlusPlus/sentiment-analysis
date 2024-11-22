@@ -6,7 +6,9 @@ I started with this prompt:
 
 <img width="827" alt="image" src="https://github.com/user-attachments/assets/36b6b209-fc83-40ef-8d96-e01f4ad609fb">
 
-... And iteratively built out these scripts as well as this corresponding document. It's been a pretty cool first for me - using ChatGPT to autogenerate an iterative tutorial with functioning code and documentation!
+... And iteratively built out these scripts as well as this corresponding document. 
+
+It's been a pretty cool first for me - using ChatGPT to autogenerate an iterative tutorial with functioning code and documentation!
 
 ---
 
