@@ -118,8 +118,6 @@ This script demonstrates how to perform sentiment analysis using a pre-trained m
 
 This script is designed to explore how the pre-trained sentiment analysis pipeline handles custom input text. It allows for experimentation with different types of sentences, including positive, negative, and neutral examples, to understand the model's behavior and predictions.
 
----
-
 ### **What the Script Does**
 
 1. **Loads a Pre-trained Model**:
@@ -137,4 +135,21 @@ This script is designed to explore how the pre-trained sentiment analysis pipeli
 4. **Prints Results to the Console**:
    - Each review and its corresponding prediction are printed in a readable format.
 
----
+Run the script:
+
+```
+python experiment_sentiment.py
+```
+
+Example Output:
+
+```
+Review 1: The movie was absolutely fantastic! I loved every moment of it.
+Prediction: [{'label': 'POSITIVE', 'score': 0.9998730421066284}]
+
+Review 2: I couldn't stand the acting. It was so bad that I left halfway through.
+Prediction: [{'label': 'NEGATIVE', 'score': 0.998234987234}]
+
+Review 3: It was an average movie. Some parts were good, but others were forgettable.
+Prediction: [{'label': 'NEGATIVE', 'score': 0.567823410987234}]
+```
