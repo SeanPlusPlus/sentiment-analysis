@@ -21,11 +21,12 @@ training_args = TrainingArguments(
     output_dir="./results",
     evaluation_strategy="epoch",
     learning_rate=2e-5,
-    per_device_train_batch_size=16,
+    per_device_train_batch_size=4,  # Reduce from 16 to 8
     num_train_epochs=2,
     save_steps=10_000,
     save_total_limit=2,
     logging_dir='./logs',
+    gradient_accumulation_steps=2,  # Accumulates gradients for 2 steps (simulates batch size of 16)
 )
 
 # Define Trainer
