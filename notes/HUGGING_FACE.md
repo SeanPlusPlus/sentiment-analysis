@@ -12,24 +12,24 @@ Hugging Face started as a chatbot company but pivoted to become the center of th
 
 1. Transformers Library:
 
-- Provides thousands of pre-trained models for NLP, vision, and audio tasks.
-- Supports all major frameworks, including PyTorch, TensorFlow, and JAX.
+  - Provides thousands of pre-trained models for NLP, vision, and audio tasks.
+  - Supports all major frameworks, including PyTorch, TensorFlow, and JAX.
 
 2. Datasets Library:
 
-- A vast collection of ready-to-use datasets with tools for efficient preprocessing.
+  - A vast collection of ready-to-use datasets with tools for efficient preprocessing.
 
 3. Model Hub:
 
-- A collaborative repository of pre-trained and fine-tuned models. Think GitHub, but for AI models.
+  - A collaborative repository of pre-trained and fine-tuned models. Think GitHub, but for AI models.
 
 4. Inference API:
 
-- Cloud-based inference service for deploying models at scale.
+  - Cloud-based inference service for deploying models at scale.
 
 5. Hugging Face Spaces:
 
-- A platform to showcase and interact with AI demos using tools like Streamlit or Gradio.
+  - A platform to showcase and interact with AI demos using tools like Streamlit or Gradio.
 
 **Why Hugging Face Matters**
 
@@ -37,29 +37,29 @@ Hugging Face has transformed the way AI practitioners approach tasks by providin
 
 1. Ease of Use:
 
-- Models can be loaded and fine-tuned in just a few lines of code.
+  - Models can be loaded and fine-tuned in just a few lines of code.
 
 2. Accessibility:
 
-- Bridges the gap between cutting-edge research and real-world applications.
+  - Bridges the gap between cutting-edge research and real-world applications.
 
 3. Community Collaboration:
 
-- Thousands of researchers and developers contribute models and tools.
+  - Thousands of researchers and developers contribute models and tools.
 
 4. Versatility:
 
-- Extends beyond NLP to include computer vision (e.g., image classification) and audio processing (e.g., speech recognition).
+  - Extends beyond NLP to include computer vision (e.g., image classification) and audio processing (e.g., speech recognition).
 
 ---
 
 ### Hugging Face Core Libraries
 
-- `Transformers`	For working with pre-trained transformer models.
-- `Datasets`	Access and preprocess datasets efficiently.
-- `Tokenizers`	Fast, efficient tokenization for text processing.
-- `Accelerate`	Simplifies multi-GPU and TPU training.
-- `Diffusers`	A library for diffusion models used in image generation tasks (e.g., Stable Diffusion).
+  - `Transformers`	For working with pre-trained transformer models.
+  - `Datasets`	Access and preprocess datasets efficiently.
+  - `Tokenizers`	Fast, efficient tokenization for text processing.
+  - `Accelerate`	Simplifies multi-GPU and TPU training.
+  - `Diffusers`	A library for diffusion models used in image generation tasks (e.g., Stable Diffusion).
 
 ---
 
@@ -67,15 +67,15 @@ Hugging Face has transformed the way AI practitioners approach tasks by providin
 
 The Hugging Face Model Hub is a central repository where developers and researchers share models for various tasks. It includes:
 
-- Pre-Trained Models: Examples: BERT, GPT-2, CLIP, Stable Diffusion.
-- Fine-Tuned Models: Custom models adapted for specific tasks like sentiment analysis, translation, or summarization.
-- Community Contributions: Models from academia, industry, and independent researchers.
+  - Pre-Trained Models: Examples: BERT, GPT-2, CLIP, Stable Diffusion.
+  - Fine-Tuned Models: Custom models adapted for specific tasks like sentiment analysis, translation, or summarization.
+  - Community Contributions: Models from academia, industry, and independent researchers.
 
 **Key Features:**
 
-- Model Cards: Detailed documentation about the model, its usage, and training data.
-- Versioning: Supports different versions of the same model for reproducibility.
-- Search and Filters: Easily find models based on tasks, architecture, and size.
+  - Model Cards: Detailed documentation about the model, its usage, and training data.
+  - Versioning: Supports different versions of the same model for reproducibility.
+  - Search and Filters: Easily find models based on tasks, architecture, and size.
 
 ---
 
@@ -83,9 +83,9 @@ The Hugging Face Model Hub is a central repository where developers and research
 
 In this project, Hugging Face provides:
 
-- Access to Pre-Trained Models: The distilbert-base-uncased model is available for sentiment analysis without requiring custom training.
-- Ease of Fine-Tuning: Hugging Face simplifies adapting pre-trained models to specific tasks.
-- Scalable Tools: The ecosystem supports everything from tokenization to deploying fine-tuned models.
+  - Access to Pre-Trained Models: The distilbert-base-uncased model is available for sentiment analysis without requiring custom training.
+  - Ease of Fine-Tuning: Hugging Face simplifies adapting pre-trained models to specific tasks.
+  - Scalable Tools: The ecosystem supports everything from tokenization to deploying fine-tuned models.
 
 ---
 
