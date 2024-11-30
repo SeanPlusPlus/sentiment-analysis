@@ -199,23 +199,23 @@ This approach leverages the concept of transfer learning:
 
 1. Pre-Trained Model:
 
-- The script starts with a pre-trained distilbert-base-uncased model from Hugging Face's Transformers library.
-- This model already "knows" a lot about language, thanks to prior training on massive datasets.
+   - The script starts with a pre-trained distilbert-base-uncased model from Hugging Face's Transformers library.
+   - This model already "knows" a lot about language, thanks to prior training on massive datasets.
 
 2. IMDb Dataset:
 
-- The IMDb dataset contains movie reviews labeled as POSITIVE or NEGATIVE.
-- The dataset is tokenized and prepared for the model.
+   - The IMDb dataset contains movie reviews labeled as POSITIVE or NEGATIVE.
+   - The dataset is tokenized and prepared for the model.
 
 3. Fine-Tuning:
 
-- The pre-trained model's weights are updated based on the IMDb data.
-- During training, the model learns to associate patterns in the text (e.g., "fantastic" or "terrible") with the correct sentiment labels.
+   - The pre-trained model's weights are updated based on the IMDb data.
+   - During training, the model learns to associate patterns in the text (e.g., "fantastic" or "terrible") with the correct sentiment labels.
 
 4. Result:
 
-- The fine-tuned model becomes specialized for IMDb sentiment analysis.
-- It is saved locally in the `./fine_tuned_sentiment_model` directory for later use.
+   - The fine-tuned model becomes specialized for IMDb sentiment analysis.
+   - It is saved locally in the `./fine_tuned_sentiment_model` directory for later use.
 
 **Is It "Your Own Model"?**
 
