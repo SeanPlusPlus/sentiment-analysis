@@ -171,3 +171,69 @@ Prediction: [{'label': 'NEGATIVE', 'score': 0.998234987234}]
 Review 3: It was an average movie. Some parts were good, but others were forgettable.
 Prediction: [{'label': 'NEGATIVE', 'score': 0.567823410987234}]
 ```
+
+---
+
+## Fine Tune Sentiment
+
+(This will take some time to run)
+
+`python fine_tune_sentimenty.py`
+
+### Understanding the Fine-Tuning Process
+
+**What is Fine-Tuning?**
+
+Fine-tuning is the process of taking a pre-trained model (like `distilbert-base-uncased`) and adapting it to a specific task (in this case, sentiment analysis on movie reviews from the IMDb dataset).
+
+This approach leverages the concept of transfer learning:
+
+- The model has already been trained on a large, generic dataset to understand language structure and meaning.
+- By fine-tuning, you adapt this general-purpose knowledge for your specific task using a smaller, task-specific dataset.
+
+**What's Happening in `fine_tune_sentiment.py`?**
+
+1. Pre-Trained Model:
+
+- The script starts with a pre-trained distilbert-base-uncased model from Hugging Face's Transformers library.
+- This model already "knows" a lot about language, thanks to prior training on massive datasets.
+
+2. IMDb Dataset:
+
+- The IMDb dataset contains movie reviews labeled as POSITIVE or NEGATIVE.
+- The dataset is tokenized and prepared for the model.
+
+3. Fine-Tuning:
+
+- The pre-trained model's weights are updated based on the IMDb data.
+- During training, the model learns to associate patterns in the text (e.g., "fantastic" or "terrible") with the correct sentiment labels.
+
+4. Result:
+
+- The fine-tuned model becomes specialized for IMDb sentiment analysis.
+- It is saved locally in the `./fine_tuned_sentiment_model` directory for later use.
+
+**Is It "Your Own Model"?**
+
+Yes and no:
+
+- Yes: The fine-tuned model is now uniquely yours, tailored to your task and dataset. It is distinct from the original pre-trained model because its weights have been updated.
+- No: The model architecture and base knowledge come from the pre-trained `distilbert-base-uncased`, not something built from scratch.
+
+**Why Fine-Tune Instead of Training From Scratch?**
+
+Fine-tuning is:
+
+1. Efficient: You only need to train for a few epochs on a small dataset because the model already understands general language.
+2. Effective: Transfer learning ensures better performance with less data and compute resources.
+
+Training from scratch would require:
+
+- A random model with no pre-learned knowledge.
+- Large datasets and extensive computational resources (e.g., GPUs/TPUs running for weeks).
+
+**Key Takeaways**
+
+- Fine-tuning adapts a pre-trained model to your specific task.
+- The fine-tuned model is unique to you and your dataset, even though it’s based on a pre-trained architecture.
+- This approach combines the power of pre-trained language models with your specific task’s requirements.
