@@ -6,9 +6,13 @@ I started with this prompt:
 
 <img width="827" alt="image" src="https://github.com/user-attachments/assets/36b6b209-fc83-40ef-8d96-e01f4ad609fb">
 
-... And iteratively built out these scripts as well as this corresponding document. 
+... And iteratively built out these scripts as well as this corresponding document ...
 
 It's been a pretty cool first for me - using ChatGPT to autogenerate an iterative tutorial with functioning code and documentation!
+
+Oh! And see the `notes` dir for more general stuff that I worked on with the 🤖 while building out this tutorial. Basically, it's a collection of docs where we distill some of our chat Q&A into a little explainer.
+
+- https://github.com/SeanPlusPlus/sentiment-analysis/blob/main/notes
 
 ---
 
