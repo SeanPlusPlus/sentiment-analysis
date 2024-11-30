@@ -100,13 +100,13 @@ You should see output like
 [{'label': 'POSITIVE', 'score': 0.999...}]
 ```
 
+Alright, time to add some more interesting scripts to our tutorial!
+
 ---
 
-## `sentiment_imdb.py`
+## Sentiment IMDB
 
-```
-python sentiment_imdb.py
-```
+`sentiment_imdb.py`
 
 This script demonstrates how to perform sentiment analysis using a pre-trained model (`distilbert-base-uncased-finetuned-sst-2-english`) on the IMDb dataset. It covers the following steps:
 
@@ -130,7 +130,9 @@ This script demonstrates how to perform sentiment analysis using a pre-trained m
 
 ---
 
-## `experiment_sentiment.py`
+## Experiment Sentiment
+
+`experiment_sentiment.py`
 
 This script is designed to explore how the pre-trained sentiment analysis pipeline handles custom input text. It allows for experimentation with different types of sentences, including positive, negative, and neutral examples, to understand the model's behavior and predictions.
 
